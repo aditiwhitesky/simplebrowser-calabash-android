@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.whitesky.browser.Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/adressbar_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/list_selector_background"
+            android:src="@drawable/ic_action_back" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/back"
+            android:background="@drawable/vertical_divider" />
+
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/divider"
+            android:background="@android:drawable/list_selector_background"
+            android:src="@drawable/ic_action_forward" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="Go to address"
+            android:imeOptions="actionGo"
+            android:inputType="textNoSuggestions|textUri"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="30dp"
+            android:paddingTop="2dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#FF000000"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/btnAddBookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/ic_bookmark"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>

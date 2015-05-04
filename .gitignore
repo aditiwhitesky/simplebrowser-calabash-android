@@ -1,0 +1,17 @@
+gen
+bin
+.classpath
+local.properties
+.project
+.DS_Store
+.*.sw?
+*.patch
+.gradle
+.idea
+build
+*.iml
+Thumbs.db
+dump.txt
+.irb-history
+test_servers
+screenshot*.png

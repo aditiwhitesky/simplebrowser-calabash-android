@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Theme.BrowserActionBar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/BrowserActionBar</item>
+        <item name="actionBarStyle">@style/BrowserActionBar</item>
+    </style>
+
+    <style name="BrowserActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/actionbar_blue</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/actionbar_blue</item>
+    </style>
+
+</resources>
